@@ -1,0 +1,9 @@
+Bundle-Name: Angular Widget Configuration
+Bundle-SymbolicName: angular_widget.configuration
+Bundle-Version: 1.0.0
+-jsp:\
+	*.jsp,\
+	*.jspf
+-plugin.bundle: com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin
+-plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin
+-sources: false

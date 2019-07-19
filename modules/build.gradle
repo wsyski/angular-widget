@@ -1,0 +1,92 @@
+ext {
+	bndlibVersion = '3.5.0'
+	cxfVersion = '3.1.9'
+	commonsBeanutilsVersion = '1.9.2'
+	commonsLang3Version = '3.7'
+	commonsLangVersion = '2.6'
+	commonsCodecVersion = '1.7'
+	extenderApiVersion = '1.0.2'
+	gradleVersion = '4.6'
+	hamcrestAllVersion = '1.3'
+	guavaVersion = '19.0'
+	httpClientVersion = '4.4.1'
+	httpCoreVersion = '4.4.4'
+	liferayKernelVersion = '7.0.6c'
+	liferayTaglibVersion = '7.0.6c'
+	liferayConfigurationMetatypeVersion = '2.0.16'
+	jstlVersion = '1.2'
+	junitVersion = '4.12'
+	mockitoVersion = '2.27.0'
+	osgiCmpnVersion = '6.0.0'
+	osgiCoreVersion = '6.0.0'
+	osgiUtilVersion = '3.0.0'
+	osgiComponentAnnotationsVersion = '1.3.0'
+	portletApiVersion = '2.0'
+	servletApiVersion = '3.0.1'
+	jacksonVersion = '2.9.9'
+	jerseyVersion = '2.27'
+	hk2Version = '2.5.0'
+	modelmapperVersion = '2.3.3'
+	sourceCompatibility = '1.8'
+	springVersion = '4.3.10.RELEASE'
+}
+buildscript {
+	dependencies {
+		classpath group: "com.liferay", name: "com.liferay.gradle.plugins", version: "${liferayGradlePluginsVersion}"
+	}
+
+	repositories {
+		maven {
+			url "${liferayRepositoryUrl}"
+		}
+	}
+}
+
+subprojects {
+	buildscript {
+		repositories {
+			mavenLocal()
+
+			maven {
+				url "${liferayRepositoryUrl}"
+			}
+			maven {
+				url "${arenaRepositoryUrl}"
+			}
+		}
+	}
+
+	apply plugin: "com.liferay.plugin"
+	apply plugin: 'java'
+	apply plugin: 'maven-publish'
+
+	plugins.withId("java") {
+		sourceCompatibility = "$rootProject.ext.sourceCompatibility"
+	}
+
+	// Please uncomment the following if you experience that downloading node takes too much time 
+	// plugins.withId("com.liferay.node") {
+	//    node.download = false
+	// }
+
+	liferay {
+		liferayHome = "/opt/java/liferay/arena-7.2.0-ga1/bundles"
+		deployDir = new File("${liferayHome}" + "/deploy")
+	}
+
+	repositories {
+		mavenLocal()
+
+		maven {
+			url "${liferayRepositoryUrl}"
+		}
+		maven {
+			url "${arenaRepositoryUrl}"
+		}
+	}
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = "$rootProject.ext.gradleVersion"
+	jarFile = "${project.projectDir}/.gradle-wrapper/gradle-wrapper.jar"
+}
