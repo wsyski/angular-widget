@@ -1,6 +1,6 @@
 Bundle-Name: Angular Portlet Web Override
-Bundle-SymbolicName: angular_widget.override
+Bundle-SymbolicName: angular-widget.override
 Bundle-Version: 1.0.0
-Fragment-Host: angular_widget
+Fragment-Host: angular-widget
 
 

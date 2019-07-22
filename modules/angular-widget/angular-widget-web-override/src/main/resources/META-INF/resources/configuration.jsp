@@ -37,6 +37,7 @@ String drink = PrefsParamUtil.getString(portletPreferences, request, "drink", "w
 					<aui:option label="water" value="water" />
 					<aui:option label="wine" value="wine" />
 					<aui:option label="beer" value="beer" />
+					<aui:option label="juice" value="juice" />
 				</aui:select>
 
 			</liferay-frontend:fieldset>

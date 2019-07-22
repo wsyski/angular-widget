@@ -16,7 +16,7 @@ import java.util.Map;
 
 @Component(
         immediate = true,
-        property = "javax.portlet.name=" + "com_axiell_arena_ui_angular_portlet_web_portlet_AngularPortlet",
+        property = "javax.portlet.name=" + "angular_widget",
         service = ConfigurationAction.class
 )
 public class AngularConfigurationAction extends DefaultConfigurationAction {
@@ -30,7 +30,7 @@ public class AngularConfigurationAction extends DefaultConfigurationAction {
 
     @Override
     @Reference(
-            target = "(osgi.web.symbolicname=com.axiell.arena.ui.modules.angular_portlet.web)",
+            target = "(osgi.web.symbolicname=angular-widget)",
             unbind = "-"
     )
     public void setServletContext(ServletContext servletContext) {

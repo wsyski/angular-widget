@@ -1,5 +1,5 @@
 Bundle-Name: Angular Widget Configuration
-Bundle-SymbolicName: angular_widget.configuration
+Bundle-SymbolicName: angular-widget.configuration
 Bundle-Version: 1.0.0
 -jsp:\
 	*.jsp,\
