@@ -8,3 +8,8 @@ build {
     dependsOn npmRunBuild
 }
 
+jar {
+    doLast{
+    }
+}
+
