@@ -1,6 +1,9 @@
 {
 	"create-jar": {
 		"output-dir": "dist",
+		"customManifestHeaders": {
+             "Responsible": "wsyski@gmail.com"
+        },
 		"features": {
 			"js-extender": true,
 			"web-context": "/angular-widget",
