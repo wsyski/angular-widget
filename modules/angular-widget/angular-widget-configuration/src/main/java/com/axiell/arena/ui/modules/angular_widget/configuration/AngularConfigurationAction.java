@@ -16,7 +16,7 @@ import java.util.Map;
 
 @Component(
         immediate = true,
-        property = "javax.portlet.name=" + "angular_widget",
+        property = "javax.portlet.name=" + "com_axiell_arena_ui_angular_widget_web_portlet_AngularWidget",
         service = ConfigurationAction.class
 )
 public class AngularConfigurationAction extends DefaultConfigurationAction {
