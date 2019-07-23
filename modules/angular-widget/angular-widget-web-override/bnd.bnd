@@ -1,5 +1,5 @@
 Bundle-Name: Angular Portlet Web Override
-Bundle-SymbolicName: angular-widget.override
+Bundle-SymbolicName: com.axiell.arena.ui.modules.angular_widget.web.override
 Bundle-Version: 1.0.0
 Fragment-Host: angular-widget
 

@@ -1,5 +1,5 @@
 Bundle-Name: Angular Widget Configuration
-Bundle-SymbolicName: angular-widget.configuration
+Bundle-SymbolicName: com.axiell.arena.ui.modules.angular_widget.configuration
 Bundle-Version: 1.0.0
 -jsp:\
 	*.jsp,\
