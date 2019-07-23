@@ -1,4 +1,0 @@
-include(
-	'angular-widget:angular-widget-configuration',
-	'angular-widget:angular-widget-web-override',
-)
