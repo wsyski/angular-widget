@@ -21,5 +21,5 @@ if (environment.production) {
     enableProdMode();
 }
 
-index.default(LIFERAY_PARAMS);
 Liferay.ThemeDisplay.setLanguageId('sv_SE');
+index.default(LIFERAY_PARAMS);
