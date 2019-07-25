@@ -85,8 +85,3 @@ subprojects {
 		}
 	}
 }
-
-task wrapper(type: Wrapper) {
-	gradleVersion = "$rootProject.ext.gradleVersion"
-	jarFile = "${project.projectDir}/.gradle-wrapper/gradle-wrapper.jar"
-}
