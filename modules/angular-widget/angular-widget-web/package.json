@@ -28,7 +28,8 @@
 		"ts-node": "~7.0.0",
 		"tslint": "~5.15.0",
 		"typescript": "~3.4.3",
-		"ts-loader": "5.3.3"
+		"ts-loader": "5.3.3",
+		"@arena-ui/liferay-mock": "file:../arena-ui/liferay-mock/dist/arena-ui/liferay-mock/arena-ui-liferay-mock-1.0.0.tgz"
 	},
 	"dependencies": {
 		"@angular/animations": "~8.1.2",
@@ -44,6 +45,7 @@
 		"zone.js": "~0.9.1"
 	},
 	"scripts": {
+		"scss": "node-sass --include-path node_modules/@arena-ui/liferay-mock/theme/css src/main/resources/META-INF/resources/scss/arena-ui.scss src/main/resources/META-INF/resources/css/arena-ui.css && node-sass --include-path node_modules/@arena-ui/liferay-mock/theme/css dev/scss/main.scss dev/css/main.css",
 		"build": "tsc -p tsconfig.json && npm run copy-assets && liferay-npm-bundler",
 		"copy-assets": "lnbs-copy-assets",
 		"translate": "lnbs-translate",
