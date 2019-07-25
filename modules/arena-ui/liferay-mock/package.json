@@ -1,12 +1,7 @@
 {
   "name": "@arena-ui/liferay-mock",
   "version": "1.0.0",
-  "main": "dist/arena-ui/liferay-mock/index.cjs.js",
-  "module": "dist/arena-ui/liferay-mock/index.esm.js",
   "browser": "dist/arena-ui/liferay-mock/index.js",
-  "dependencies": {
-    "ms": "^2.0.0"
-  },
   "devDependencies": {
     "clay-css": "^2.15.1",
     "rollup": "^1.17.0",

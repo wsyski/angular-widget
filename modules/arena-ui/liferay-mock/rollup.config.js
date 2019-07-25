@@ -24,8 +24,6 @@ export default [// browser-friendly umd build
           name: pkg.name,
           version: pkg.version,
           description: pkg.description,
-          main: pkg.main.replace(/^dist\//, ''),
-          module: pkg.module.replace(/^dist\//, ''),
           browser: pkg.browser.replace(/^dist\//, ''),
           author: pkg.author,
           license: pkg.license,

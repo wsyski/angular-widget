@@ -1,15 +1,14 @@
-apply plugin: "com.liferay.node"
+dependencies {
+    compileOnly project(":modules:arena-ui:liferay-mock")
+}
 
 deploy {
+    dependsOn classes
     dependsOn npmRunDeploy
 }
 
-build {
+classes {
     dependsOn npmRunBuild
 }
 
-jar {
-    doLast{
-    }
-}
 

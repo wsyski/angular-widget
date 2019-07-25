@@ -22,16 +22,21 @@
             "main": "src/dev/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules/@arena-ui/liferay-mock/theme/css"
+              ]
+            },
             "aot": false,
             "assets": [
-              "src/dev/favicon.ico",
+              "src/dev/assets/favicon.ico",
               "src/dev/assets"
             ],
             "styles": [
-              "assets/css/styles.css"
+              "src/dev/assets/css/styles.scss"
             ],
             "scripts": [
-              "src/dev/js/liferay.js"
+              "node_modules/@arena-ui/liferay-mock/index.js"
             ]
           },
           "configurations": {
@@ -90,7 +95,7 @@
               "src/assets"
             ],
             "styles": [
-              "assets/css/styles.css"
+              "assets/css/styles.scss"
             ],
             "scripts": []
           }
