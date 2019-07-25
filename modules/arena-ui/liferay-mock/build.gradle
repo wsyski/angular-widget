@@ -1,0 +1,138 @@
+apply plugin: "com.liferay.node"
+
+import com.liferay.gradle.util.copy.StripPathSegmentsAction
+
+configurations {
+    fontAwesome
+}
+
+task buildClay(type: Copy)
+task buildClayFonts(type: Copy)
+task buildClayIcons(type: Copy)
+task buildFontAwesome(type: Copy)
+task buildLexiconIcons(type: Copy)
+
+String fontAwesomeVersion = "3.2.1"
+
+File themeDestinationDir = file("dist/arena-ui/liferay-mock/theme");
+
+buildClay {
+    File clayDestinationDir = new File(themeDestinationDir, "css/clay")
+
+    dependsOn npmInstall
+
+    doFirst {
+        delete clayDestinationDir
+    }
+
+    eachFile {
+        if (name in ["atlas.scss", "bootstrap.scss", "base.scss"]) {
+            filter {
+                String line ->
+
+                    if (line == "// INSERT CUSTOM EXTENSIONS") {
+                        line = '''\
+@import "variables";
+
+@import "../liferay_variables_custom";
+@import "../liferay_variables";
+@import "../bourbon";
+@import "../clay_custom";
+@import "../liferay_custom";'''
+                    }
+                    else if (line == "// INSERT CUSTOM VARS") {
+                        line = '''\
+@import "../clay_variables";'''
+                    }
+
+                    return line
+            }
+        }
+        else if (name in ["atlas-variables.scss", "base-variables.scss"]) {
+            filter {
+                String line ->
+
+                    if (line == "// INSERT CUSTOM BASE VARS") {
+                        line = '''\
+@import "../clay_variables";'''
+                    }
+                    else if (line == "// INSERT CUSTOM VARS") {
+                        line = '''\
+
+@import "../liferay_variables_custom";
+@import "../liferay_variables";'''
+                    }
+
+                    return line
+            }
+        }
+    }
+
+    eachFile new StripPathSegmentsAction(3)
+    from npmInstall.nodeModulesDir
+    include "clay-css/src/scss/"
+    includeEmptyDirs = false
+    into clayDestinationDir
+}
+
+buildClayFonts {
+    File clayFontsDestinationDir = new File(themeDestinationDir, "css/clay/fonts")
+
+    dependsOn buildClay
+
+    doFirst {
+        delete clayFontsDestinationDir
+    }
+
+    eachFile new StripPathSegmentsAction(3)
+    from npmInstall.nodeModulesDir
+    include "clay/release/fonts/"
+    includeEmptyDirs = false
+    into clayFontsDestinationDir
+}
+
+buildClayIcons {
+    File clayIconsDestinationDir = new File(themeDestinationDir, "images/clay")
+
+    dependsOn npmInstall
+
+    doFirst {
+        delete clayIconsDestinationDir
+    }
+
+    eachFile new StripPathSegmentsAction(4)
+    from npmInstall.nodeModulesDir
+    include "clay-css/lib/images/icons/"
+    includeEmptyDirs = false
+    into clayIconsDestinationDir
+}
+
+buildLexiconIcons {
+    File lexiconIconsDestinationDir = new File(themeDestinationDir, "images/lexicon")
+
+    dependsOn npmInstall
+
+    doFirst {
+        delete lexiconIconsDestinationDir
+    }
+
+    eachFile new StripPathSegmentsAction(4)
+    from npmInstall.nodeModulesDir
+    include "clay-css/lib/images/icons/"
+    includeEmptyDirs = false
+    into lexiconIconsDestinationDir
+}
+
+dependencies {
+    fontAwesome group: "org.webjars", name: "font-awesome", transitive: false, version: fontAwesomeVersion
+}
+
+classes {
+    dependsOn buildClayFonts
+    dependsOn buildClayIcons
+    dependsOn buildFontAwesome
+    dependsOn buildLexiconIcons
+}
+
+
+

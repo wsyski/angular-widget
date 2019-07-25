@@ -1,4 +1,5 @@
 include(
+	'modules:arena-ui:liferay-mock',
 	'modules:angular-widget:angular-widget-configuration',
 	'modules:angular-widget:angular-widget-web',
 	'modules:angular-widget:angular-widget-web-override',
