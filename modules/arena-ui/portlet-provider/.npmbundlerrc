@@ -1,0 +1,14 @@
+{
+    "exclude": {
+        "*": [
+            "test/**/*"
+        ]
+    },
+    "include-dependencies": [
+        "@arena-ui/core",
+        "@arena-ui/social-share"
+    ],
+	"dump-report": true,
+	"process-serially": false,
+	"verbose": true
+}
