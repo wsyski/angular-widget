@@ -1,3 +1,14 @@
+deploy {
+  dependsOn classes
+  dependsOn npmRunDeploy
+}
+
+classes {
+  dependsOn npmRunBuild
+}
+
 npmRunBuild.dependsOn npmRunTest
 npmRunTest.dependsOn npmRunLint
+
+
 

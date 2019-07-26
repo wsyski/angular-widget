@@ -1,6 +1,7 @@
 include(
 	'modules:arena-ui:liferay-mock',
 	'modules:arena-ui:portlet-provider',
+	'modules:arena-ui:common-client',
 	'modules:angular-widget:angular-widget-configuration',
 	'modules:angular-widget:angular-widget-web',
 	'modules:angular-widget:angular-widget-web-override',
