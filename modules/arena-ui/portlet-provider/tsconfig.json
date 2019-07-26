@@ -8,10 +8,10 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noStrictGenericChecks": true,
-    "outDir": "build",
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
+    "outDir": "build/resources/main/META-INF/resources",
     "typeRoots": [
       "./node_modules/@types/",
       "./@types"
