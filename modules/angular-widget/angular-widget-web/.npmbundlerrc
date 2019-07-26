@@ -11,5 +11,6 @@
 			"configuration": "features/configuration.json"
 		}
 	},
-	"dump-report": true
+	"dump-report": true,
+	"verbose": true
 }
