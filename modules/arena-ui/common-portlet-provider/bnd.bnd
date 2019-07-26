@@ -1,0 +1,6 @@
+Bundle-Name: Common Portlet Provider
+Bundle-Description: Common Portlet Provider
+Bundle-SymbolicName: com.axiell.arena.ui.modules.arena_ui.common_portlet_provider
+Bundle-Version: 1.0.0
+Web-ContextPath: /common-portlet-provider
+

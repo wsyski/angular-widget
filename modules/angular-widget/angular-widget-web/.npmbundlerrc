@@ -12,5 +12,29 @@
 		}
 	},
 	"dump-report": true,
-	"verbose": true
+	"verbose": true,
+	"exclude": {
+		"*": true
+	},
+	"config": {
+		"imports": {
+			"common-portlet-provider": {
+				"@angular/animations": "~8.1.2",
+				"@angular/common": "~8.1.2",
+				"@angular/compiler": "~8.1.2",
+				"@angular/core": "~8.1.2",
+				"@angular/forms": "~8.1.2",
+				"@angular/platform-browser": "~8.1.2",
+				"@angular/platform-browser-dynamic": "~8.1.2",
+				"@angular/router": "~8.1.2",
+				"core-js": "2.6.5",
+				"rxjs": "~6.4.0",
+				"@arena-ui/core": "1.0.0",
+				"@arena-ui/social-share": "1.0.0"
+			},
+			"": {
+				"common-portlet-provider": "1.0.0"
+			}
+		}
+	}
 }

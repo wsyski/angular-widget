@@ -3,4 +3,4 @@ import './polyfills';
 import {enableProdMode} from '@angular/core';
 
 enableProdMode();
-console.log('Bootstrapped @arena-ui/portlet-provider');
+console.log('Bootstrapped common-portlet-provider');

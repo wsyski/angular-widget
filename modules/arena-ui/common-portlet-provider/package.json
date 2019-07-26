@@ -1,5 +1,5 @@
 {
-  "name": "@arena-ui/portlet-provider",
+  "name": "common-portlet-provider",
   "description": "Arena UI Portlet Provider",
   "version": "1.0.0",
   "dependencies": {
