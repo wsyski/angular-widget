@@ -1,5 +1,6 @@
 dependencies {
     compileOnly project(":modules:arena-ui:liferay-mock")
+    compileOnly project(':modules:arena-ui:common-client')
 }
 
 deploy {

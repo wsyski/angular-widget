@@ -1,10 +1,10 @@
 {
   "name": "@arena-ui/core",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "peerDependencies": {
-    "@angular/common": "^7.2.12",
-    "@angular/core": "^7.2.12",
-    "@angular/forms": "^7.2.12",
-    "@angular/router": "^7.2.12"
+    "@angular/common": "~8.1.2",
+    "@angular/core": "~8.1.2",
+    "@angular/forms": "~8.1.2",
+    "@angular/router": "~8.1.2"
   }
 }
