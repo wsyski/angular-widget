@@ -2,6 +2,19 @@
 	"name": "angular-widget",
 	"version": "1.0.0",
 	"description": "Angular Widget",
+	"dependencies": {
+		"@angular/animations": "~8.1.2",
+		"@angular/common": "~8.1.2",
+		"@angular/compiler": "~8.1.2",
+		"@angular/core": "~8.1.2",
+		"@angular/forms": "~8.1.2",
+		"@angular/platform-browser": "~8.1.2",
+		"@angular/platform-browser-dynamic": "~8.1.2",
+		"@angular/router": "~8.1.2",
+		"core-js": "2.6.5",
+		"rxjs": "~6.4.0",
+		"zone.js": "~0.9.1"
+	},
 	"devDependencies": {
 		"liferay-npm-bundler": "^2.11.0",
 		"liferay-npm-build-support": "^2.11.0",
@@ -31,19 +44,6 @@
 		"ts-loader": "5.3.3",
 		"node-sass": "^4.12.0",
 		"@arena-ui/liferay-mock": "file:../../arena-ui/liferay-mock/dist/arena-ui/liferay-mock/arena-ui-liferay-mock-1.0.0.tgz"
-	},
-	"dependencies": {
-		"@angular/animations": "~8.1.2",
-		"@angular/common": "~8.1.2",
-		"@angular/compiler": "~8.1.2",
-		"@angular/core": "~8.1.2",
-		"@angular/forms": "~8.1.2",
-		"@angular/platform-browser": "~8.1.2",
-		"@angular/platform-browser-dynamic": "~8.1.2",
-		"@angular/router": "~8.1.2",
-		"core-js": "2.6.5",
-		"rxjs": "~6.4.0",
-		"zone.js": "~0.9.1"
 	},
 	"scripts": {
 		"scss": "node-sass --include-path node_modules/@arena-ui/liferay-mock/theme/css assets/css/styles.scss  assets/css/styles.css",

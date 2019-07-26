@@ -1,0 +1,17 @@
+{
+    "extends": "../../../tslint.json",
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "arena-ui",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "arena-ui",
+            "kebab-case"
+        ]
+    }
+}

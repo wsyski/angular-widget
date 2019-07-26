@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../dist/arena-ui/social-share",
+  "lib": {
+    "entryFile": "src/public_api.ts"
+  }
+}

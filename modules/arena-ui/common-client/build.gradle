@@ -1,0 +1,3 @@
+npmRunBuild.dependsOn npmRunTest
+npmRunTest.dependsOn npmRunLint
+
