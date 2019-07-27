@@ -1,4 +1,14 @@
 {
+    "create-jar": {
+        "output-dir": "dist",
+        "customManifestHeaders": {
+            "Responsible": "wsyski@gmail.com"
+        },
+        "features": {
+            "js-extender": false,
+            "web-context": "/common-portlet-provider"
+        }
+    },
     "exclude": {
         "*": [
             "test/**/*"

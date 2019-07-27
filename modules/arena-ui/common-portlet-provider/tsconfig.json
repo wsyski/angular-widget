@@ -11,18 +11,19 @@
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
-    "outDir": "build/resources/main/META-INF/resources",
+    "outDir": "build",
     "typeRoots": [
       "./node_modules/@types/",
-      "./@types"
+      ".src/types"
     ],
     "types": [
       "jasmine",
       "node"
     ]
   },
-  "include": [
-    "@types/**/*.ts",
-    "src/main/resources/META-INF/resources/**/*.ts"
+  "include": ["./src/**/*.ts"],
+  "exclude": [
+    "src/**/*.spec*",
+    "src/dev/**/*"
   ]
 }

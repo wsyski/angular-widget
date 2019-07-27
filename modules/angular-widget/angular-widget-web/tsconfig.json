@@ -13,7 +13,8 @@
 		"target": "es5",
 		"outDir": "build",
 		"typeRoots": [
-			"./node_modules/@types/"
+			"./node_modules/@types/",
+			".src/types"
 		],
 		"types": [
 			"jasmine",
@@ -22,6 +23,7 @@
 	},
 	"include": ["./src/**/*.ts"],
 	"exclude": [
+		"src/**/*.spec*",
 		"src/dev/**/*"
 	]
 }

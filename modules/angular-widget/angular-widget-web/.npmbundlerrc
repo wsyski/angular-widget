@@ -11,8 +11,6 @@
 			"configuration": "features/configuration.json"
 		}
 	},
-	"dump-report": true,
-	"verbose": true,
 	"exclude": {
 		"*": true
 	},
@@ -36,5 +34,8 @@
 				"common-portlet-provider": "1.0.0"
 			}
 		}
-	}
+	},
+	"dump-report": true,
+	"process-serially": false,
+	"verbose": true
 }
