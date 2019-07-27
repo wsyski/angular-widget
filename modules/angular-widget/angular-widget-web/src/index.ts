@@ -1,9 +1,4 @@
-try {
-    require('common-portlet-provider');
-} catch (e) {
-    require('./dev/polyfills');
-}
-
+import 'common-portlet-provider';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {AppComponent} from './app/app.component';
 import {AppModule} from './app/app.module';
