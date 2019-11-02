@@ -20,6 +20,8 @@
     "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
     "outDir": "./dist/out-tsc",
+    "declaration": true,
+    "importHelpers": true,
     "baseUrl": "./",
     "paths": {
       "@arena-ui/core": [
