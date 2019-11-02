@@ -1,29 +1,35 @@
 {
-	"compilerOptions": {
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"inlineSources": true,
-		"lib": ["es2015", "dom"],
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"noImplicitAny": true,
-		"noStrictGenericChecks": true,
-		"sourceMap": true,
-		"suppressImplicitAnyIndexErrors": true,
-		"target": "es5",
-		"outDir": "build",
-		"typeRoots": [
-			"./node_modules/@types/",
-			".src/types"
-		],
-		"types": [
-			"jasmine",
-			"node"
-		]
-	},
-	"include": ["./src/**/*.ts"],
-	"exclude": [
-		"src/**/*.spec*",
-		"src/dev/**/*"
-	]
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  },
+  "compileOnSave": false,
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSources": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noStrictGenericChecks": true,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es5",
+    "outDir": "build",
+    "typeRoots": [
+      "./node_modules/@types/",
+      ".src/types"
+    ]
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec*",
+    "src/dev/**/*"
+  ]
 }

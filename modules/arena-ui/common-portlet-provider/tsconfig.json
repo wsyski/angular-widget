@@ -1,4 +1,9 @@
 {
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  },
+  "compileOnSave": false,
   "compilerOptions": {
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -15,10 +20,6 @@
     "typeRoots": [
       "./node_modules/@types/",
       ".src/types"
-    ],
-    "types": [
-      "jasmine",
-      "node"
     ]
   },
   "include": ["./src/**/*.ts"],
