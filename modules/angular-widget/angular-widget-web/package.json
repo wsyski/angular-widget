@@ -13,6 +13,7 @@
 		"@angular/router": "~8.2.13",
 		"core-js": "~3.3.6",
 		"rxjs": "~6.4.0",
+		"tslib": "~1.10.0",
 		"zone.js": "~0.9.1",
 		"@arena-ui/core": "file:../../arena-ui/common-client/dist/arena-ui/core/arena-ui-core-1.0.0.tgz",
 		"@arena-ui/social-share": "file:../../arena-ui/common-client/dist/arena-ui/social-share/arena-ui-social-share-1.0.0.tgz"
