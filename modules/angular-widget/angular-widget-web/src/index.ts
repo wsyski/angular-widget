@@ -1,3 +1,5 @@
+// import 'core-js/proposals/reflect-metadata';
+// import 'zone.js/dist/zone';
 import 'common-portlet-provider';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {AppComponent} from './app/app.component';

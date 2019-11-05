@@ -18,6 +18,7 @@
 		}
 	},
 	"portletInstance": {
+		"name": "Angular Widget Portlet",
 		"fields": {
 			"drink": {
 				"type": "string",
