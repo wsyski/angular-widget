@@ -15,6 +15,11 @@
 		"rxjs": "~6.4.0",
 		"tslib": "~1.10.0",
 		"zone.js": "~0.9.1",
+		"file-saver": "2.0.1",
+		"@ngrx/effects": "~7.3.0",
+		"@ngrx/router-store": "~7.3.0",
+		"ngx-bootstrap": "~5.3.2",
+		"immutable-ics": "0.4.0",
 		"@arena-ui/core": "file:../../arena-ui/common-client/dist/arena-ui/core/arena-ui-core-1.0.0.tgz",
 		"@arena-ui/social-share": "file:../../arena-ui/common-client/dist/arena-ui/social-share/arena-ui-social-share-1.0.0.tgz"
 	},
