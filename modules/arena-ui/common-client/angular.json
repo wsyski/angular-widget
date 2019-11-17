@@ -141,6 +141,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "projects/arena-ui/core/src/test.ts",
+            "polyfills": "projects/arena-ui/core/src/polyfills.ts",
             "tsConfig": "projects/arena-ui/core/tsconfig.spec.json",
             "karmaConfig": "projects/arena-ui/core/karma.conf.js"
           }
@@ -176,6 +177,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "projects/arena-ui/social-share/src/test.ts",
+            "polyfills": "projects/arena-ui/social-share/src/polyfills.ts",
             "tsConfig": "projects/arena-ui/social-share/tsconfig.spec.json",
             "karmaConfig": "projects/arena-ui/social-share/karma.conf.js"
           }
