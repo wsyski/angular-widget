@@ -1,7 +1,7 @@
 {
 	"translatorTextKey": "16174b29f21e4b7bb7ed869d1c2e5232",
 	"supportedLocales": ["sv", "en", "de", "fi"],
-	"liferayDir": "/opt/java/liferay/arena-7.2.0-ga1/bundles",
+	"liferayDir": "/opt/java/liferay/arena-7.2.1-ga2/bundles",
 	"webpack": {
 		"rules": [
 			{
