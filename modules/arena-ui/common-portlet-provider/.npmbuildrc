@@ -1,5 +1,5 @@
 {
-	"liferayDir": "/opt/java/liferay/arena-7.2.0-ga1/bundles",
+	"liferayDir": "/opt/liferay",
 	"webpack": {
 		"rules": [
 			{

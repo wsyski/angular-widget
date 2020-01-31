@@ -71,7 +71,7 @@ subprojects {
 	// }
 
 	liferay {
-		liferayHome = "/opt/java/liferay/arena-7.2.0-ga1/bundles"
+		liferayHome = "/opt/liferay"
 		deployDir = new File("${liferayHome}" + "/deploy")
 	}
 
